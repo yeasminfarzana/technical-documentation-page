@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical Ducumentation Page">
+    <title>Technical Ducumentation Page</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+      <nav id="navbar">
+        <header id="doc_title">MATLAB</header>
+        <ul>
+          <li><a accesskey="i" href="#Introduction" class="nav-link">Introduction</a></li>
+          <li><a accesskey="w" href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+          <li><a accesskey="j" href="#Matrices_and_Arrays" class="nav-link">Matrices and Arrays</a></li>
+          <li><a accesskey="h" href="#Matrix_and_Array_Operations" class="nav-link">Matrix and Array Operations</a></li>
+          <li><a accesskey="v" href="#Array_Indexing" class="nav-link">Array Indexing</a></li>
+          <li><a accesskey="d" href="#Text_and_Characters" class="nav-link">Text and Characters</a></li>
+          <li><a accesskey="r" href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+        
+      </nav>
+    <main id="main-doc">
+      <div class="vl"></div>
+      <section role="region" aria-labelledby="Introduction" class="main-section" id="Introduction">
+        <header id="Introduction" class="rigth_title">Introduction</header>
+        <div class="text">
+          <p class="paragraph">MATLAB is a programming platform used by millions of engineers and scientists to analyse data, develop algorithms and create models.</p>
+          <p class="paragraph">The heart of MATLAB is its language, a matrix-based language allowing the most natural expression of computational mathematics. MATLAB is used in various fields including:</p>
+          <div class="points">
+            <ul>
+              <li>Aerospace and Defense;</li>
+              <li>Automotive;</li>
+              <li>Biotech and Pharmaceutical;</li>
+              <li>Communications;</li>
+              <li>Electronics;</li>
+              <li>Energy Production;</li>
+              <li>Industrial Automation and Machinery;</li>
+              <li>Medical Devices</li>
+              <li>Metals, Materials, and Mining;</li>
+              <li>
+Quantitative Finance and Risk Management;
+</li>
+              <li>Railway Systems;</li>
+              <li>Semiconductors;</li>
+              <li>
+Software and Internet;
+</li>
+              <li>Technical Services and Consulting.</li>
+            </ul>
+          </div>
+        </div>
+        <section role="region" aria-labelledby="What_you_should_already_know" class="main-section" id="What_you_should_already_know">
+          <header id="What_you_should_already_know" class="rigth_title">What you should already know</header>
+        <div class="text"><p class="paragraph">When starting MATLAB, the desktop includes three panels:</p>
+        <div class="points">
+            <ul>
+              <li>Current Folder to access files.</li>
+              <li>Command Window to enter commands line, indicated by the prompt (>>).</li>
+              <li>Workspace to explore the data created or imported from files.</li>
+            </ul>
+          </div>
+        </div>
+        <section role="region" aria-labelledby="Matrices_and_Arrays" class="main-section" id="Matrices_and_Arrays">
+          <header id="Matrices_and_Arrays" class="rigth_title">Matrices and Arrays</header>
+          <div class="text">
+            <p class="paragraph">MATLAB is an abbreviation of "matrix laboratory" because is designed to work primarily on whole matrices and arrays.</p>
+            <p class="paragraph">All MATLAB varibles are multidimensional arrays, no matter what type of data. A matrix is a two-dimensional array often used for linear algebra.</p>
+            <p class="paragraph">To create an array with four elements in a single row, separate the elements with either a comma (,) or a space.</p>
+            <div class="codes"><p class="text_code"><code>a = [1 2 3 4]<br>a = <I>1x4</I><br>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4</code></p></div>
+            <p class="paragraph">This type of array is a <I>row vector.</I></p>
+            <p class="paragraph">To create a matrix with multiple rows, separate the rows with semicolons (;).</p>
+            <div class="codes"><p class="text_code"><code>a = [1 2 3; 4 5 6; 7 8 9]<br>a = <I>3x3</I><br>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3<br>&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6<br>&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9</code></p></div>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="Matrix_and_Array_Operations" class="main-section" id="Matrix_and_Array_Operations">
+          <header id="Matrix_and_Array_Operations" class="rigth_title">Matrix and Array Operations</header>
+          <div class="text">
+            <p class="paragraph">MATLAB allow you to process all of the values in a matrix using a single arithmetic operator or function:</p>
+            <div class="codes"><p class="text_code"><code>a = [1 2 3; 4 5 6; 7 8 9]<br>a + 10<br>ans = <I>3x3</I><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;12&nbsp;&nbsp;13<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14&nbsp;&nbsp;15&nbsp;&nbsp;16<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17&nbsp;&nbsp;18&nbsp;&nbsp;19</code></p></div>
+        </section>
+        <section role="region" aria-labelledby="Array_Indexing" class="main-section" id="Array_Indexing">
+          <header id="Array_Indexing" class="rigth_title">Array Indexing</header>
+          <div class="text">
+            <p class="paragraph">The most common way to refer to a particular element is to specify the number of row and column is:</p><div class="codes"><p class="text_code"><code>a(2,2)<br>ans = 15</code></p></div>
+            <p class="paragraph">The colon operator (:) allows you to specify a range of the form <I>start:step:end.</I> If you omit the middle step, MATLAB uses the default value if 1.</p>
+            <div class="codes"><p class="text_code"><code>a = [1 2 3 4; 5 6 7 8; 9 10 11 12; 13 14 15 16]<br>ans = <I>4x4</I><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;10&nbsp;&nbsp;11&nbsp;&nbsp;12<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;14&nbsp;&nbsp;15&nbsp;&nbsp;16<br>A(4,2)<br>ans = 14</code></p></div>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="Text_and_Characters" class="main-section" id="Text_and_Characters">
+          <header id="Text_and_Characters" class="rigth_title">Text and Characters</header>
+          <div class="text">
+            <p class="paragraph">To write a text and assign to a a variable, eclose sequences of characters in double quotes:</p>
+            <div class="codes"><p class="text-code"><code>t = "Hello, world";</code></p>
+            </div>
+            <p class="paragraph">t is an array but its <I>class</I> or data type is <I>string</I></p>
+            <p class="paragraph">To add text to a string, use the plus operator(+):</p>
+            <div class="codes"><p class="text_code"><code>f = 71;<br>c = (f-32)/1.8;<br>tempText = "Temperature is " + c + "°C"</code></p></div>
+            <div class="codes"><p class="text_code"><code>tempText =<br>"Temperature is 21.6667°C"</code></p></div>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="Reference" class="main-section" id="Reference">
+          <header id="Reference" class="rigth_title">Reference</header>
+          <div class="points text">
+            <ul>
+              <li>All the documentation in this page is taken from <a href="https://uk.mathworks.com/products/matlab/getting-started.html" target="_blank">MathWorks.</a></li>  
+            </ul>
+          </div>
+        </section>
+    </main>
+  </body>
+</html>
